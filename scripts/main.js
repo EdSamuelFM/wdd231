@@ -5,12 +5,13 @@ document.getElementById("currentyear").textContent = currentYear;
 document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
 
 // 2. Navigation
+// Consolidate to use just one class ('open') for simplicity
 const mainnav = document.querySelector('.navigation');
 const hambutton = document.querySelector('#menu');
 
 hambutton.addEventListener('click', () => {
-	mainnav.classList.toggle('show');
-	hambutton.classList.toggle('show');
+	mainnav.classList.toggle('open');
+	hambutton.classList.toggle('open');
 });
 
 // 3. Course Array
@@ -22,9 +23,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.',
-        technology: [
-            'Python'
-        ],
+        technology: ['Python'],
         completed: true
     },
     {
@@ -33,11 +32,8 @@ const courses = [
         title: 'Web Fundamentals',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
-        technology: [
-            'HTML',
-            'CSS'
-        ],
+        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming.',
+        technology: ['HTML', 'CSS'],
         completed: true
     },
     {
@@ -46,10 +42,8 @@ const courses = [
         title: 'Programming with Functions',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
-        technology: [
-            'Python'
-        ],
+        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions.',
+        technology: ['Python'],
         completed: true
     },
     {
@@ -59,9 +53,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
-        technology: [
-            'C#'
-        ],
+        technology: ['C#'],
         completed: true
     },
     {
@@ -71,11 +63,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
-        technology: [
-            'HTML',
-            'CSS',
-            'JavaScript'
-        ],
+        technology: ['HTML', 'CSS', 'JavaScript'],
         completed: true
     },
     {
@@ -85,11 +73,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
-        technology: [
-            'HTML',
-            'CSS',
-            'JavaScript'
-        ],
+        technology: ['HTML', 'CSS', 'JavaScript'],
         completed: false
     }
 ];
@@ -140,13 +124,5 @@ document.getElementById("cse").addEventListener("click", () => {
     displayCourses(cseCourses);
 });
 
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
-
-// Initial Render (Show all courses on page load)
+// Initial Render
 displayCourses(courses);
