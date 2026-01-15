@@ -1,0 +1,16 @@
+header {
+    flex-wrap: nowrap;
+}
+
+nav {
+    display: block; 
+    width: auto;
+}
+
+.navigation {
+    flex-direction: row;
+}
+
+#course-list {
+    grid-template-columns: repeat(3, 1fr); 
+}
