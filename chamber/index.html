@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Porto Alegre Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the Porto Alegre Chamber of Commerce. Connecting businesses and fostering community growth in the heart of Rio Grande do Sul.">
+    <meta name="author" content="Samuel Moraes">
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/poa.png" alt="Porto Alegre Chamber Logo">
+            <h1>Porto Alegre Chamber</h1>
+        </div>
+        <nav>
+            <button id="menu-button">☰</button>
+            <ul id="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home-grid">
+        <section class="hero">
+    <div class="hero-overlay">
+        <div class="hero-text">
+            <h2>Build Your Future in Porto Alegre</h2>
+            <p>Connecting businesses and transforming the future of our capital.</p>
+            <a href="join.html" class="cta-button">Join the Chamber Today</a>
+        </div>
+    </div>
+</section>
+
+        <section class="events-box">
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li><strong>Feb 10:</strong> Tech Networking Night</li>
+                <li><strong>Feb 22:</strong> Small Business Workshop</li>
+            </ul>
+        </section>
+
+        <section class="weather-box">
+            <h3>Local Weather</h3>
+            <div id="weather-info">
+                <p>Current: <span id="current-temp">--</span>°C</p>
+                <p id="weather-desc">--</p>
+                <hr>
+                <h4>3-Day Forecast</h4>
+                <div id="forecast"></div>
+            </div>
+        </section>
+
+        <section class="spotlight-container">
+            <h3>Business Spotlights</h3>
+            <div id="spotlight-cards">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Porto Alegre Chamber of Commerce</strong></p>
+        </div>
+        <div class="footer-dev">
+            <p>&copy; <span id="currentyear"></span> | Samuel Moraes | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/home.js"></script>
+</body>
+</html>
