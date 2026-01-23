@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #004a8d; /* Deep Blue - Porto Alegre flag tone */
-    --secondary-color: #f2a900; /* Gold */
+    --primary-color: #004a8d; 
+    --secondary-color: #f2a900; 
     --bg-color: #f9f9f9;
     --text-color: #333;
     --card-bg: #ffffff;
@@ -31,7 +31,6 @@ nav ul li a {
     padding: 0.5rem;
 }
 
-/* Directory Layouts */
 .grid-mode {
     display: flex;
     flex-direction: column;
@@ -52,7 +51,6 @@ nav ul li a {
     height: auto;
 }
 
-/* List Mode Styles */
 .list-mode {
     display: flex;
     flex-direction: column;
@@ -68,7 +66,7 @@ nav ul li a {
 }
 
 .list-mode .member-card img {
-    display: none; /* Hide images in list view for mobile */
+    display: none; 
 }
 
 footer {
@@ -82,4 +80,70 @@ footer {
 .logo-area img {
     max-width: 100px;
     height: auto;
+}
+
+#home-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.hero {
+    background-image: url('../images/hero1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+    background: none; 
+}
+
+.hero-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.spotlight-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    background: white;
 }
