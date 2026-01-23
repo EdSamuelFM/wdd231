@@ -1,6 +1,6 @@
 :root {
     --primary-color: #004a8d; 
-    --secondary-color: #f2a900; 
+    --secondary-color: #eea700; 
     --bg-color: #f9f9f9;
     --text-color: #333;
     --card-bg: #ffffff;
@@ -132,7 +132,7 @@ footer {
 .cta-button {
     display: inline-block;
     background: var(--secondary-color);
-    color: #333;
+    color: #fff;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
     font-weight: bold;
