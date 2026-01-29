@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Received | Porto Alegre Chamber</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/poa.png" alt="Porto Alegre Chamber Logo">
+            <h1>Porto Alegre Chamber</h1>
+        </div>
+        <nav>
+            <button id="menu-button">☰</button>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thankyou-container">
+        <section class="thankyou-message">
+            <div class="success-icon">✓</div>
+            <h2>Application Received!</h2>
+            <p>Thank you, <span id="user-name"></span>. Your request to join the Porto Alegre Chamber of Commerce has been submitted successfully.</p>
+            <p>Our team will review your application and contact you via email shortly.</p>
+        </section>
+
+        <section class="submission-summary">
+            <h3>Submission Summary</h3>
+            <div id="results">
+                </div>
+            <a href="index.html" class="cta-button">Return Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Porto Alegre Chamber of Commerce</strong></p>
+            <p>Praça XV de Novembro, Porto Alegre, RS</p>
+        </div>
+        <div class="footer-dev">
+            <p>&copy; <span id="currentyear"></span> | Samuel Moraes | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/thankyou.js"></script>
+</body>
+</html>

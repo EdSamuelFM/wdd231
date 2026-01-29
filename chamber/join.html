@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Porto Alegre Chamber</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+</head>
+<body>
+    <header>
+        </header>
+
+    <main class="join-container">
+        <section class="form-section">
+            <h2>Membership Application</h2>
+            <form method="get" action="thankyou.html">
+                <label>First Name*
+                    <input type="text" name="fname" required title="Enter your first name" autocomplete="given-name">
+                </label>
+                <label>Last Name*
+                    <input type="text" name="lname" required title="Enter your last name" autocomplete="family-name">
+                </label>
+                <label>Organizational Title
+                    <input type="text" name="org-title" title="Title (min 7 chars, letters/hyphens/spaces)" 
+                           autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                </label>
+                <label>Email Address*
+                    <input type="email" name="email" required title="Valid email address" 
+                           autocomplete="email" placeholder="exemplo@poachamber.org">
+                </label>
+                <label>Mobile Phone*
+                    <input type="tel" name="phone" required title="Mobile phone number" autocomplete="tel">
+                </label>
+                <label>Organization Name*
+                    <input type="text" name="organization" required title="Business or Organization Name" autocomplete="organization">
+                </label>
+                
+                <label>Membership Level*
+                    <select name="level" required>
+                        <option value="" disabled selected>Select a level...</option>
+                        <option value="np">NP Membership (Non-Profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>Organization Description
+                    <textarea name="description" title="Tell us about your organization"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="submit" value="Apply for Membership" class="submit-btn">
+            </form>
+        </section>
+
+        <section class="membership-cards">
+            <div class="card animate-pop" id="np-card">
+                <h3>NP Membership</h3>
+                <button onclick="document.getElementById('modal-np').showModal()">Learn More</button>
+            </div>
+            <div class="card animate-pop" id="bronze-card">
+                <h3>Bronze</h3>
+                <button onclick="document.getElementById('modal-bronze').showModal()">Learn More</button>
+            </div>
+            <div class="card animate-pop" id="silver-card">
+                <h3>Silver</h3>
+                <button onclick="document.getElementById('modal-silver').showModal()">Learn More</button>
+            </div>
+            <div class="card animate-pop" id="gold-card">
+                <h3>Gold</h3>
+                <button onclick="document.getElementById('modal-gold').showModal()">Learn More</button>
+            </div>
+        </section>
+
+        <dialog id="modal-np">
+    <button class="close-modal" onclick="this.parentElement.close()">×</button>
+    <h3>NP Membership</h3>
+    <p>For non-profits. Benefits include directory listing and community event access.</p>
+    <p><strong>Fee: Free</strong></p>
+</dialog>
+
+<dialog id="modal-bronze">
+    <button class="close-modal" onclick="this.parentElement.close()">×</button>
+    <h3>Bronze Membership</h3>
+    <p>Ideal for small startups. Includes directory listing, event discounts, and training sessions.</p>
+    <p><strong>Fee: $50/mo</strong></p>
+</dialog>
+
+<dialog id="modal-silver">
+    <button class="close-modal" onclick="this.parentElement.close()">×</button>
+    <h3>Silver Membership</h3>
+    <p>Everything in Bronze, plus specialized advertising and a spotlight position on the home page once a month.</p>
+    <p><strong>Fee: $150/mo</strong></p>
+</dialog>
+
+<dialog id="modal-gold">
+    <button class="close-modal" onclick="this.parentElement.close()">×</button>
+    <h3>Gold Membership</h3>
+    <p>The premium tier. Includes VIP access to special events, unlimited spotlight positions, and featured placement in all newsletters.</p>
+    <p><strong>Fee: $300/mo</strong></p>
+</dialog>
+        </main>
+
+    <footer>
+        </footer>
+    <script src="scripts/join.js"></script>
+</body>
+</html>
