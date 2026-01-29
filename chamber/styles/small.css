@@ -112,6 +112,7 @@ footer {
 
 .hero {
     background-image: url('../images/hero1.jpg');
+    alt: "Guaiba lake view";
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
