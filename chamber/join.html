@@ -79,52 +79,52 @@
             </form>
         </section>
 
-        <section class="membership-cards">
+         <section class="membership-cards">
             <div class="card animate-pop" id="np-card">
-                <h2>NP Membership</h2>
-                <button onclick="document.getElementById('modal-np').showModal()">Learn More</button>
+                <h3>NP Membership</h3>
+                <button class="open-modal" data-modal="#modal-np">Learn More</button>
             </div>
             <div class="card animate-pop" id="bronze-card">
-                <h2>Bronze</h2>
-                <button onclick="document.getElementById('modal-bronze').showModal()">Learn More</button>
+                <h3>Bronze</h3>
+                <button class="open-modal" data-modal="#modal-bronze">Learn More</button>
             </div>
             <div class="card animate-pop" id="silver-card">
-                <h2>Silver</h2>
-                <button onclick="document.getElementById('modal-silver').showModal()">Learn More</button>
+                <h3>Silver</h3>
+                <button class="open-modal" data-modal="#modal-silver">Learn More</button>
             </div>
             <div class="card animate-pop" id="gold-card">
-                <h2>Gold</h2>
-                <button onclick="document.getElementById('modal-gold').showModal()">Learn More</button>
+                <h3>Gold</h3>
+                <button class="open-modal" data-modal="#modal-gold">Learn More</button>
             </div>
         </section>
 
         <dialog id="modal-np">
-    <button class="close-modal" onclick="this.parentElement.close()">×</button>
+    <button class="close-modal">×</button>
     <h3>NP Membership</h3>
     <p>For non-profits. Benefits include directory listing and community event access.</p>
     <p><strong>Fee: Free</strong></p>
-</dialog>
+    </dialog>
 
-<dialog id="modal-bronze">
-    <button class="close-modal" onclick="this.parentElement.close()">×</button>
+    <dialog id="modal-bronze">
+    <button class="close-modal">×</button>
     <h3>Bronze Membership</h3>
     <p>Ideal for small startups. Includes directory listing, event discounts, and training sessions.</p>
     <p><strong>Fee: $50/mo</strong></p>
-</dialog>
+    </dialog>
 
-<dialog id="modal-silver">
-    <button class="close-modal" onclick="this.parentElement.close()">×</button>
+    <dialog id="modal-silver">
+    <button class="close-modal">×</button>
     <h3>Silver Membership</h3>
     <p>Everything in Bronze, plus specialized advertising and a spotlight position on the home page once a month.</p>
     <p><strong>Fee: $150/mo</strong></p>
-</dialog>
+    </dialog>
 
-<dialog id="modal-gold">
-    <button class="close-modal" onclick="this.parentElement.close()">×</button>
+    <dialog id="modal-gold">
+    <button class="close-modal">×</button>
     <h3>Gold Membership</h3>
     <p>The premium tier. Includes VIP access to special events, unlimited spotlight positions, and featured placement in all newsletters.</p>
     <p><strong>Fee: $300/mo</strong></p>
-</dialog>
+    </dialog>
         </main>
 
     <footer>
@@ -133,3 +133,4 @@
 </body>
 
 </html>
+
