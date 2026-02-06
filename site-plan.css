@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --primary-color: #1a1a2e;
+    --secondary-color: #0f3460;
+    --accent-color: #f8be00;
+    --text-color: #ffffff;
+    --body-font: 'Segoe UI', Roboto, sans-serif;
+    --heading-font: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+header, footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px #444304;
+    line-height: 1.8;
+}
+
+h2, h3 {
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-top: 2rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+hr {
+    border: 1px solid var(--secondary-color);
+    margin: 40px 0;
+}
+
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.color-box {
+    padding: 20px;
+    border: 1px solid white;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.wireframe {
+    background: #ccc;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px dashed #666;
+}
+
+.mobile { width: 200px; margin: 0 auto; }
+.desktop { width: 100%; }
+
+.wf-header, .wf-hero, .wf-main, .wf-footer, .wf-card {
+    border: 1px solid #333;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    background: #eee;
+}
+
+.wf-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
