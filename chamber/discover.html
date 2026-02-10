@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Porto Alegre Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the Porto Alegre Chamber of Commerce. Connecting businesses and fostering community growth in the heart of Rio Grande do Sul.">
+    <meta name="author" content="Samuel Moraes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Porto Alegre Chamber of Commerce Directory">
+    <meta property="og:description" content="Connecting businesses and fostering growth in Porto Alegre.">
+    <meta property="og:image" content="https://edsamuelfm.github.io/wdd231/chamber/images/poa.png">
+    <meta property="og:url" content="https://edsamuelfm.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px)">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 1025px)">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/poa.png" alt="Porto Alegre Chamber Logo">
+            <h1>Discover Porto Alegre</h1>
+        </div>
+    <nav>
+            <button id="menu-button">☰</button>
+            <ul id="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p id="visit-message"></p>
+        
+        <div class="discover-grid">
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Porto Alegre Chamber of Commerce</strong></p>
+        </div>
+        <div class="footer-dev">
+            <p>&copy; <span id="currentyear"></span> | Samuel Moraes | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/discover.js"></script>
+</body>
+</html>
