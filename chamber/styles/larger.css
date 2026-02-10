@@ -1,0 +1,89 @@
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .grid-mode {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .list-mode .member-card {
+        grid-template-columns: 2fr 2fr 1fr 1fr;
+        align-items: center;
+        padding: 0.5rem 2rem;
+    }
+
+    .list-mode .member-card:nth-child(even) {
+        background-color: #eee;
+    }
+
+    .directory-controls {
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #home-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .hero {
+        background-image: url('../images/hero1.jpg');
+        min-height: 500px; 
+         grid-column: 1 / 3;
+    }
+
+    .hero-text h2 {
+        font-size: 3rem; 
+    }
+    .events-box { grid-column: 1 / 2; }
+    .weather-box { grid-column: 2 / 3; }
+    .spotlight-container { 
+        grid-column: 1 / 3; 
+        display: flex; 
+        justify-content: space-around;
+        gap: 10px;
+    }
+    
+    #spotlight-cards {
+        display: flex;
+        gap: 20px;
+    }
+    .join-container {
+        display: grid;
+        grid-template-columns: 1fr 300px; 
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "item1 item2 item3"
+            "item4 item5 item6"
+            "item7 item8 ."; 
+    }
+
+    .attraction-card figure img {
+        filter: grayscale(50%);
+        transition: 0.4s all ease;
+    }
+
+    .attraction-card figure img:hover {
+        filter: grayscale(0%);
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+}
